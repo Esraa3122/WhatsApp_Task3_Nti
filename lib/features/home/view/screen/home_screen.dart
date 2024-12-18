@@ -5,13 +5,19 @@ import 'package:whatsapp/core/style/text_app.dart';
 import 'package:whatsapp/features/home/view/model/model_home.dart';
 import 'package:whatsapp/features/home/view/widget/build_body.dart';
 
-class MyChat extends StatelessWidget {
+class MyChat extends StatefulWidget {
   const MyChat({super.key});
 
   @override
+  State<MyChat> createState() => _MyChatState();
+}
+bool isArbic = true; 
+
+class _MyChatState extends State<MyChat> {
+  @override
   Widget build(BuildContext context) {
     return Directionality(
-      textDirection: TextDirection.rtl,
+       textDirection: isArbic ?  TextDirection.rtl : TextDirection.ltr,
       child: Scaffold(
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor:colorScreen(),
@@ -33,6 +39,11 @@ class MyChat extends StatelessWidget {
             ],
           ),
           appBar: AppBar(
+            leading: IconButton(onPressed: () {  
+            setState(() {
+              isArbic =! isArbic;
+            });
+          }, icon: const Icon(Icons.translate),color: colorApp(),),
             backgroundColor: colorScreen(),
             actions: [
               IconButton(
