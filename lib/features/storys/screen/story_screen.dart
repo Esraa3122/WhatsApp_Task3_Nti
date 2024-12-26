@@ -37,9 +37,9 @@ class MyStory extends StatelessWidget {
                   children: [
                     Container(
                       height: 200,
-                      width: 150,
+                      width: 120,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),color: Colors.grey,
+                        borderRadius: BorderRadius.circular(15),color: Colors.grey,
                         image: const DecorationImage(
                           image: NetworkImage("https://www.mexatk.com/wp-content/uploads/2017/03/%D8%B5%D9%88%D8%B1-%D9%88%D8%A7%D8%AA%D8%B3-%D8%A7%D8%A8-%D8%B1%D9%88%D8%B9%D8%A9-2.jpg",),fit: BoxFit.cover),),
                       child: Column(
@@ -56,17 +56,17 @@ class MyStory extends StatelessWidget {
                           ),
                                 const SizedBox(height: 100,),
                                 const Text(
-                                 "My Story",
-                          style:TextStyle(color: Colors.white, fontSize: 20),
+                                 "إضافة حالة",
+                          style:TextStyle(color: Colors.white, fontSize: 15),
                                 ),
                                 const SizedBox(width: 20,), 
                         ],
                       ),
                     ),
-                      const SizedBox(width: 20,),
+                      const SizedBox(width: 5,),
                         Container(
                       height: 200,
-                      width: 150,
+                      width: 120,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),color: Colors.grey,
                         image: const DecorationImage(
@@ -86,20 +86,20 @@ class MyStory extends StatelessWidget {
                           ),
                                 const SizedBox(height: 100,),
                                 const Text(
-                                 "Esraa Mosad",
-                          style:TextStyle(color: Colors.white, fontSize: 20),
+                                 "Nora",
+                          style:TextStyle(color: Colors.white, fontSize: 15),
                                 ), 
                   ],
                 ),
                 ),
-                const SizedBox(width: 20,),
+                const SizedBox(width: 5,),
                         Container(
                       height: 200,
-                      width: 150,
+                      width: 120,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),color: Colors.grey,
                         image: const DecorationImage(
-                          image: NetworkImage("https://th.bing.com/th/id/OIP.1WG4yN7YhSri1ZjKaNP5lwHaHU?rs=1&pid=ImgDetMain",),fit: BoxFit.cover),),
+                          image: NetworkImage("https://th.bing.com/th/id/R.484c90b3902567dad9f6eb6a565b68de?rik=fr%2bCf%2boQxbvfjw&pid=ImgRaw&r=0",),fit: BoxFit.cover),),
                       child: Column(
                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -110,14 +110,45 @@ class MyStory extends StatelessWidget {
                             decoration: BoxDecoration(border: Border.all(color: colorApp(),width: 2),borderRadius: BorderRadius.circular(30)),
                             child: const CircleAvatar(
                             radius: 30,
-                            backgroundImage: NetworkImage("https://th.bing.com/th/id/OIP.jyQ5Cj90kOUTHgnFSqH6mwHaEK?rs=1&pid=ImgDetMain"),
+                            backgroundImage: NetworkImage("https://th.bing.com/th/id/OIP.TyIm3GQmFfR8aigQUtOFFgHaI_?pid=ImgDet&w=474&h=575&rs=1"),
                                   ),
                           ),
                                 const SizedBox(height: 100,),
                                 const Text(
                                  "Esraa",
-                          style:TextStyle(color: Colors.white, fontSize: 20),
+                          style:TextStyle(color: Colors.white, fontSize: 15),
                                 ), 
+                  ],
+                ),
+                ),
+                      const SizedBox(width: 5,),
+                        Container(
+                      height: 200,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),color: Colors.grey,
+                        image: const DecorationImage(
+                          image: NetworkImage("https://www.mexatk.com/wp-content/uploads/2017/03/%D8%B1%D9%85%D8%B2%D9%8A%D8%A7%D8%AA-%D9%88%D8%A7%D8%AA%D8%B3-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-3-800x800.jpg",),fit: BoxFit.cover),),
+                      child: Column(
+                       crossAxisAlignment: CrossAxisAlignment.start,
+                       
+                        children: [
+                          const SizedBox(height: 10,),
+                          Container(
+                            width: 60,
+                            height: 60,
+                            decoration: BoxDecoration(border: Border.all(color: colorApp(),width: 2),borderRadius: BorderRadius.circular(30)),
+                            child: const CircleAvatar(
+                            radius: 30,
+                            backgroundImage: NetworkImage("https://th.bing.com/th/id/OIP.h6XpMIoj7e25D2vl6EUF_wHaJQ?pid=ImgDet&w=474&h=592&rs=1"),
+                                  ),
+                          ),
+                                const SizedBox(height: 100,),
+                               const Text(
+                                 "Reham",
+                          style:TextStyle(color: Colors.white, fontSize: 16,),
+                                ), 
+                                
                   ],
                 ),
                 ),
